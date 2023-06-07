@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.rating {
+    color: gold;
+    
+    text-align:center;
+  }
+  .tag{
+    color: rgba(18, 18, 99, 0.788);
+    font-weight: bold;
+  }
+.tag p {
+    margin: 11px;
+    font-size: 20px;
+    color: #1c1c1c;
+}
+select {
+    padding:10px;
+    border: 0;
+    font-size: 18px;
+    list-style: none;
+    border-radius:10% ;
+    color: #222222;
+    
+}
+h4{
+    font-size: 35px;
+    margin: 50px;
+    text-align: center;
+}
+h4:hover{
+ color: #383838;
+ font-size: 40px;
+
+}
+select:hover{
+    background-color: rgba(230, 125, 83, 0.116);
+    width: 120px;
+}
+
+.job{
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.menu{
+    position: relative;
+    z-index: 1; 
+  }
+.info h1 {
+    padding: 15px;
+
+}
+.info input{
+    
+        background-color: transparent;
+        border: none;
+        margin: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      }
+      
+      input:hover {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        width: 250px;
+      }
+      
+
+
+
+.banner {
+    background-image: url("/assets/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+
+}
+.overlay {
+    margin-bottom:20px ;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+  }
+  .banner:hover .overlay {
+    opacity: 1;
+  }
+  
+  .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centraliza vertical e horizontalmente */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+.latest{
+    display: flex; 
+    justify-content: center;
+    margin-left: 100px;
+    
+
+   
+}
+.latest img{
+    width: 215px;
+    height: 300px;
+     margin: 10px;
+    border-radius: 20px;
+  
+   
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .sale-tag {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    background-color: rgb(155, 18, 18);
+    border-radius: 50%;
+    color: white;
+    padding: 5px;
+    font-weight: 200;
+  }
+  .header2{
+         
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 20px;
+      
+  
+  }
+  
+.header2 h2{
+    padding: 20px;
+  
+}
+.header2 p{
+    font-size: 20px;
+    color: #fff(13, 18, 22);
+    
+}
+
+.content {   
+    margin-top:100px ;
+    background-color: rgba(201, 160, 160, 0.5);
+    height: 50vh;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: #222222;
+  
+}
+
+.content img{
+
+    width: 300px;
+    height: 350px;
+    border-radius:50% ;
+    
+}
+h3{ padding-top: 50px;
+    text-align: center;  
+    margin-top: 50px;
+    font-size: 35px;
+    color: #222222;
+  
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    color: #222222;
+    font-size: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.about img{
+    
+    width: 300px;
+    height: 300px;
+    border-radius:50% ;
+}
+
+#team {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(185, 102, 72, 0.349);
+}
+
+
+#team img{
+    width: 230px;
+    height: 250px;
+    border-radius: 60%;
+    margin-left: 20px;
+    
+  
+}
+h2 {
+    text-align: center;
+    margin: 50px;
+    color:  #222222;
+    
+}
+
+.card {
+    width: 40%;
+    padding: 20px;
+}
+
+
+
+.card {
+    width: 40%;
+    margin: 30px auto;
+    padding: 20px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.card-title {
+    font-size: 22px;
+    padding: 15px;
+    text-align: center;
+    color: #222222;
+}
+
+
+    .card-text {
+        display: flex;
+        justify-content: center;
+       
+    }
+    
+    .card-text svg {
+        font-size: 18px;
+        margin: 12px;
+        margin-top: 15px;
+
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        
+        margin: 10px;
+        padding: 10px;
+       
+        
+    }
+    .socials  svg {
+        font-size: 18px;
+        margin: 12px;
+        margin-top: 15px;
+        text-decoration: none;
+    }
+    
+        
+    
+    
+   footer{
+    text-align: center;
+  
+    
+   }
+   footer .socials a{
+    text-decoration: none;
+    
+   }
+   @media (max-width: 600px) {
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+  
+    .tag p {
+      margin: 5px;
+      font-size: 16px;
+    }
+  
+    select {
+      font-size: 14px;
+      border-radius: 8%;
+    }
+  
+    h4 {
+      font-size: 18px;
+      margin: 30px;
+    }
+  
+    select:hover {
+      width: 100px;
+    }
+  
+    .job {
+      font-size: 12px;
+    }
+  
+    .menu {
+      margin: 10px;
+    }
+  
+    .info h1 {
+      padding: 10px;
+    }
+  
+    .info input {
+      margin: 10px;
+      padding: 8px 16px;
+      font-size: 14px;
+      border-radius: 16px;
+    }
+  
+    input:hover {
+      width: 180px;
+    }
+  
+    .latest img {
+      width: 150px;
+      height: 200px;
+      margin: 5px;
+    }
+  
+    .content {
+      margin-top: 50px;
+      padding: 10px;
+    }
+  
+    .content img {
+      width: 200px;
+      height: 250px;
+    }
+  
+    h3 {
+      padding-top: 30px;
+      font-size: 20px;
+    }
+  
+    .about img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    #team img {
+      width: 150px;
+      height: 180px;
+      margin-left: 10px;
+    }
+  
+    h2 {
+      margin: 20px;
+    }
+  
+    .card {
+      width: 80%;
+      margin: 20px auto;
+      padding: 10px;
+    }
+  
+    .card-title {
+      font-size: 10px;
+      padding: 10px;
+    }
+  
+    .card-text svg {
+      font-size: 14px;
+      margin: 8px;
+      margin-top: 10px;
+    }
+  }
+  
