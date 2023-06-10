@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0 auto;
     box-sizing: border-box;
     font-family: 'Edu NSW ACT Foundation', cursive;
     font-family: 'Roboto', sans-serif;
@@ -115,7 +115,7 @@ select:hover{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* centraliza vertical e horizontalmente */
+    transform: translate(-50%, -50%); 
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -124,7 +124,7 @@ select:hover{
 .latest{
     display: flex; 
     justify-content: center;
-    margin-left: 100px;
+   
     
 
    
@@ -162,10 +162,7 @@ select:hover{
   
   }
   
-.header2 h2{
-    padding: 20px;
-  
-}
+
 .header2 p{
     font-size: 20px;
     color: #fff(13, 18, 22);
@@ -175,9 +172,9 @@ select:hover{
 .content {   
     margin-top:100px ;
     background-color: rgba(201, 160, 160, 0.5);
-    height: 50vh;
+    height: 400px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     justify-content: space-around;
     color: #222222;
@@ -215,15 +212,17 @@ h3{ padding-top: 50px;
 }
 
 #team {
+padding: 20px;
     width: 100%;
-    height: 60vh;
+    height:100%;
     display: flex;
     justify-content: flex-end;
-    background-color: rgba(185, 102, 72, 0.349);
+   
 }
 
 
 #team img{
+  padding: 25px;
     width: 230px;
     height: 250px;
     border-radius: 60%;
@@ -256,11 +255,12 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: rgba(185, 102, 72, 0.349);
 }
 
 
 .card-title {
-    font-size: 22px;
+    font-size: 22 px;
     padding: 15px;
     text-align: center;
     color: #222222;
@@ -283,7 +283,6 @@ h2 {
     .socials {
         display: flex;
         justify-content: center;
-        
         margin: 10px;
         padding: 10px;
        
@@ -292,7 +291,6 @@ h2 {
     .socials  svg {
         font-size: 18px;
         margin: 12px;
-        margin-top: 15px;
         text-decoration: none;
     }
     
@@ -304,112 +302,102 @@ h2 {
   
     
    }
-   footer .socials a{
-    text-decoration: none;
-    
-   }
-   @media (max-width: 600px) {
+   
+   @media screen and (max-width: 600px) {
+   
+    .menu{
+        
+        .menu-toggle {
+            display: block;
+            width: 30px;
+            height: 25px;
+            position: relative;
+            cursor: pointer;
+            z-index: 2;
+          }
+          
+          .menu-toggle span {
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: #000;
+            transition: transform 0.3s ease;
+          }
+          
+          .menu-toggle span:nth-child(1) {
+            top: 0;
+          }
+          
+          .menu-toggle span:nth-child(2) {
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          
+          .menu-toggle span:nth-child(3) {
+            bottom: 0;
+          }
+          
+          .menu-toggle.open span:nth-child(1),
+          .menu-toggle.open span:nth-child(3) {
+            transform: translateY(8px) rotate(45deg);
+          }
+          
+          .menu-toggle.open span:nth-child(2) {
+            opacity: 0;
+          }
+          
+          .menu-items {
+            display: none;
+          }
+          
+          .menu-toggle.open + .menu-items {
+            display: block;
+          }
+          .banner url {
+            width: 600px;
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
+          }
+          
     }
-  
-    .tag p {
-      margin: 5px;
-      font-size: 16px;
-    }
-  
-    select {
-      font-size: 14px;
-      border-radius: 8%;
-    }
-  
-    h4 {
-      font-size: 18px;
-      margin: 30px;
-    }
-  
-    select:hover {
-      width: 100px;
-    }
-  
-    .job {
-      font-size: 12px;
-    }
-  
-    .menu {
-      margin: 10px;
-    }
-  
-    .info h1 {
-      padding: 10px;
-    }
-  
-    .info input {
-      margin: 10px;
-      padding: 8px 16px;
-      font-size: 14px;
-      border-radius: 16px;
-    }
-  
-    input:hover {
-      width: 180px;
-    }
-  
-    .latest img {
-      width: 150px;
-      height: 200px;
-      margin: 5px;
-    }
-  
-    .content {
-      margin-top: 50px;
-      padding: 10px;
-    }
-  
-    .content img {
-      width: 200px;
-      height: 250px;
-    }
-  
-    h3 {
-      padding-top: 30px;
-      font-size: 20px;
-    }
-  
-    .about img {
-      width: 200px;
-      height: 200px;
-    }
-  
-    #team img {
-      width: 150px;
-      height: 180px;
-      margin-left: 10px;
-    }
-  
-    h2 {
-      margin: 20px;
-    }
-  
-    .card {
-      width: 80%;
-      margin: 20px auto;
-      padding: 10px;
-    }
-  
-    .card-title {
-      font-size: 10px;
-      padding: 10px;
-    }
-  
-    .card-text svg {
-      font-size: 14px;
-      margin: 8px;
-      margin-top: 10px;
-    }
-  }
-  
+     .latest{
+        display: inline-table;
+
+     }
+      .header2 h2{
+        margin-top:10px ;
+        font-size:17px ;
+      }
+      .header2 p{
+        font-size:15px;
+        margin-bottom:10px ;
+      }
+      .content{
+       
+        height:300px ;
+        
+      }
+    .content img{
+        margin-left: 20px;
+        width:150px ;
+        height: 150px;
+     
+    
+      }
+      .about {
+        font-size: 15px;
+        margin-left: 15px;
+      }
+      h3{
+        font-size: 25px;
+      }
+      .about img{
+        width: 200px;
+        height: 200px;
+      }
+      #team img{
+         width: 150px;
+         height: 150px;
+      }
+
+   }
